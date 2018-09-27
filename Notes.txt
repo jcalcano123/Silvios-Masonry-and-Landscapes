@@ -1,0 +1,47 @@
+IDEAS
+
+START PROJECT form with name
+type of project (masonry, landscaping, other)
+Name
+email
+phone number
+Describe project.
+Forward request to email
+
+About tab
+
+How It Started
+
+Our Mission.
+
+Services
+
+Masonry ---> Residentail/ commercial.
+Gallery
+
+Landscaping
+Gallery
+
+Contact 
+Weather you have a simple or compelex project, Silvios welcomes all Masonry and landscaping projects. With years of experience
+Dave and Iggy can complete your project with ease.
+Same div as Start Project
+
+Perhaps a map API of location and business hours
+
+Inspirations;
+http://www.stoneprobuilders.com/
+https://superiorstoneandmasonry.com/
+
+HOME PAGE
+
+CALL button on top right nav bar. 
+submit button
+facebook and instagram links 
+
+Testimonial animation
+things I need from Iggy
+
+Picture of nice ass house/ fireplace/ brick work.
+Pictures of work
+Costumer testimonials. Quotes. atleast 4. 
