@@ -21,13 +21,13 @@ function blurFunction() {
 }
 
 function openSlidemenu (){
-	document.getElementById('side-menu').style.width = '250px';
-		document.getElementById('main').style.marginLeft = '250px';
+	document.getElementById('side-menu').style.width = '100%';
+		
 }
 
 function closeSlidemenu (){
 	document.getElementById('side-menu').style.width = '0px';
-		document.getElementById('main').style.marginLeft = '0px';
+		
 }
 
 $(document).ready(function () {
