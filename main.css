@@ -164,7 +164,7 @@ button:active {
 }
 
 .sidemenu .btn-close {
-	position:relative
+	position:relative;
 	top:0;
 	font-size:50px;
 	overflow: auto;
@@ -188,7 +188,7 @@ div.flex-container {
 	position: relative;
 	align-content: center;
 	justify-content: space-around;
-
+	
 	
 }
 
@@ -197,7 +197,9 @@ div.flex-container {
 	opacity:0.9;
   width: 75px;
   height:auto;
-  margin: 40px;
+	margin-left: 75px;
+	margin-right:75px;
+	margin-top:10px;
   text-align: center;
   font-size: 25px;
 	border: solid 1px #000;
@@ -218,26 +220,33 @@ div.flex-container2 {
 	position: relative;
 	align-content: center;
 	justify-content: space-around;
+		flex-direction: row;
+
+	
 }
 .flex-container2 > div {
   background-color: #f1f1f1;
   height:350px;
-  margin: 60px;
+margin-left:90px;
+margin-right:90px;
   text-align: center;
   font-size: 25px;
 	border: solid 1px #000;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-left:175px;
-	margin-right:175px;
 	margin-top:20px;
+	margin-bottom:20px;
+
 }
 
 .box1 {
 	flex: 1;
+	
 }
 .box2 {
-	flex:1;}
+	flex:1;
+
+}
 .box3 {
 	flex:1;
 }
@@ -257,7 +266,7 @@ div.grid {
 	
 }
 .gallery {
-	height:500px;
+	height:auto;
 	background-color:#f1f1f1;
 		overflow:scroll; 
 }
@@ -311,9 +320,14 @@ img.css-clipped2 {
     height: 500px;
     -webkit-clip-path: polygon(626px 463px,765px 236px,687px 31px,271px 100px,70px 10px,49px 250px,133px 406px,374px 462px,529px 393px);
     clip-path: polygon(626px 463px,765px 236px,687px 31px,271px 100px,70px 10px,49px 250px,133px 406px,374px 462px,529px 393px);
-	z-index:1;
-	opacity:0.6;
+	z-index:0;
+	opacity:0.8;
+	margin:0px auto;
+	
 
+}
+.truck {
+	display:none;
 }
 img.css-clipped2:hover {
 	opacity:0.9;
@@ -322,14 +336,17 @@ img.css-clipped2:hover {
 	background-color: white;
 	display:flex;
 	flex-direction: row-reverse;
+background-image: url('images/stone 8.jpg');
+	background-position: center;
+	margin: auto;
+
 	
 }
 .about{
-	background: grey; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #f2f2f2f2,white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #f2f2f2,white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right,#f2f2f2,white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #f2f2f2,white); /* Standard syntax *//* Standard syntax */
+flex-direction: row-reverse;
+background-image: url('images/stone 8.jpg');
+	background-position: center;
+	margin: auto;
 	display:flex;
 	flex-direction: row-reverse;
 	
@@ -340,10 +357,12 @@ img.css-clipped2:hover {
     position: relative; 
     width: 400px; 
     height: auto; 
-    padding: 10px; 
+    padding: 30px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 	z-index:2;
-	
+	background-color: #FFF;
+	vertical-align: sub;
+	border: solid 1px;
 
 	 
 }
@@ -354,6 +373,8 @@ img.css-clipped2:hover {
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
+	padding-top:0px;
+	padding-bottom:0px;
 }
 #slideshow2 { 
 	margin-left:20%;
@@ -362,11 +383,9 @@ img.css-clipped2:hover {
     width: auto; 
     height: 100px; 
     padding: 10px; 
-  
 	z-index:2;
-	
-
-	 
+	font-size: 27px;
+		 
 }
 
 #slideshow2 > div { 
@@ -377,10 +396,45 @@ img.css-clipped2:hover {
     bottom: 10px; 
 }
 .container3 {
-background:#f2f2f2;
-	height:200px;
-	margin:0 auto;
-	z-index: 0
+	height:500px;
+	z-index: 0;
+		background: grey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(,white,grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white,grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white,grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white,grey); /* Standard syntax *//* Standard syntax */
+	text-align: center;
+	padding-bottom:45px;
+	border-top: 5px #cc9900 solid; 
+
+	
+		
+}
+.container32 {
+	height:auto;
+	z-index: 0;
+		background: grey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(,white,grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white,grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white,grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white,grey); /* Standard syntax *//* Standard syntax */
+	text-align: center;
+	padding-bottom:45px;
+
+	
+		
+}
+.container33 {
+	height:auto;
+	z-index: 0;
+		background: grey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(,white,#dddddd,white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white,#dddddd,white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white,#dddddd,white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white,#dddddd,white); /* Standard syntax *//* Standard syntax */
+	text-align: center;
+	padding-bottom:45px;
+	border-top: 5px #cc9900 solid; 
 }
 .container4{
 	display: flex;
@@ -415,11 +469,19 @@ background:#f2f2f2;
 	postion:auto;
 	z-index:1;
 flex:1; 
-float:center;}
-.container5{
-	background-color:grey;
+float:center;
+}
+.container5 {
 	z-index: 0;
 	height:auto;
+		background: grey; /* For browsers that do not support gradients */
+	
+  background: -webkit-linear-gradient(,white,grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white,grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white,grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white,grey); /* Standard syntax *//* Standard syntax */
+	text-align: center;
+	border-top: 5px #cc9900 solid; 
 }
 .missionbox{
 		margin: 10px auto; 
@@ -477,8 +539,13 @@ h4 {
 	margin:0px;
 }
 h2.best {
-	font-size:50px;
-	padding:10px;
+	font-size:45px;
+	padding:0px;
+	margin:0px;
+}
+h2.best2 {
+	margin-top:50px;
+	margin-bottom:50px;
 }
 small {
 	font-size:14px;
@@ -586,14 +653,22 @@ h3 {
 	h2.best{
 		font-size: 40px;
 	}
-	.flex-container{
-		flex-direction:
-		}
+
 	.flex-container > div {
 		width:100%;
 		margin:20px;
 	}
+	.about{
+		flex-direction: column;
+	}
+	.container32{
+		height:225px;
+	}
+	#slideshow {
+		
+	}
 }
+
 @media (max-width: 1125px){
 	
 	.container2 {
@@ -608,15 +683,23 @@ h3 {
 	#slideshow{
 		height:200px;
 		flex:3;
-		top:70px
+		top:70px;
 		
+		
+	}
+	h2.best {
+		margin-top: 70px;
 	}
 
 }
+
 @media (max-width: 1000px) {
 	.flex-container > div {
 		margin:5px;
 		}
+	.container32 {
+		height: 245px;
+	}
 }
 @media (max-width: 920px) {
 	div.middle{
@@ -624,7 +707,9 @@ h3 {
 		padding-bottom:20px;
 
 	}
-
+	.flex-container2 > div {
+		margin:30px;
+}
 	#slideshow{
 		overflow:auto;
 		top:0;
@@ -637,7 +722,9 @@ h3 {
 		width:100%;
 		
 }
-	
+	.container32 {
+		height: 270px;
+	}
 	.contact {
 		width:auto;
 		margin-left:5%;
@@ -651,8 +738,20 @@ h3 {
 		flex-direction: column;
 				width: 50%;
 	
-	;
+
 	}
+	div.flex-container2 {
+		flex-direction:column;
+		width:80%;
+		margin-left: 10%;
+		margin-right:10%;
+		
+	}
+	.flex-container2 > div {
+		margin:15px;
+	
+}
+	
 	.dbot {
 		margin:0
 	}
@@ -665,7 +764,17 @@ h3 {
 	 .clipped img.css-clipped {
 		display:none;
 	}
+		.container32 {
+		height: 350px;
+	}
+	img.css-clipped2 {
+	width:90%;
+		margin-right: 100px;
+		
 }
+}
+
+
 @media (max-width: 660px) {
 	
 	
@@ -684,8 +793,16 @@ h3 {
 	h5.designer  {
 		margin-top:18px;
 	}
+	#slideshow2 { 
+	margin-left:10%;
+	margin-right:10%;
+	
 }
-@media (max-width: 550px) {
+}
+.flex-container2 {
+	flex-direction: column;
+}
+@media (max-width: 580px) {
 	
 	h1{
 		font-size:70px;
@@ -735,5 +852,136 @@ button.button1 {
 		margin-left:0%;
 	 margin-right:0%;
 	 
+	}
+		.container32 {
+		height: 430px;
+	}
+	#slideshow2 { 
+	margin-left:10%;
+	margin-right:10%;
+	
+}
+	h2.best {
+		margin-top:180px;
+	}
+
+}
+@media (max-width: 475px)
+{
+	div.flex-container2 {
+		width:100%;
+		margin: 0 auto;
+	}
+	#cursive {
+		font-size: 35px;
+		margin-top:25px
+	}
+	h3.mnl {
+		font-size:17px;
+		margin-right:23px;
+					padding-top:15px;
+
+	}	
+		}
+@media (max-width: 475px) {
+	.container32 {
+		height: 500px;	
+	}
+	.container4 {
+		flex-direction: column;
+	}
+	img.css-clipped2 {
+	display:none;
+
+}
+	.middle {
+		margin:0px;
+	}
+	img.truck {
+		display:block;
+		width:100%;
+	}
+	#slideshow {
+		width:80%;
+	}
+	.middle {
+		width:100%;
+	}
+	.flex-container {
+		width:100%;
+	}
+div.flex-container div {
+
+	width:170%;
+	overflow: auto;
+	text-align: center;
+	margin:auto;
+	margin-left:5%;
+	margin-right:5%;
+
+
+	}
+}
+@media (max-width: 390px) {
+	
+	div.flex-container div {
+
+	
+	overflow: auto;
+	text-align: center;
+	margin: 0 auto;
+	margin-left:13%;
+	margin-right:5%;
+		width:150%;
+
+	}
+	.box5 {
+		display:none;
+	}
+	h3.mnl {
+		font-size:13px;
+	}
+	.footer{
+		height:250px;;
+	}
+	.container32{
+		height:600px;
+		
+	}
+	.button3 {
+		padding:10px;
+	}
+	.mail {
+	font-size: 17px;
+	margin-bottom: 10px;
+	}
+	h2.small  {
+		
+	}
+	h5.designer {
+		margin-top:60px;
+	}
+}
+
+@media (max-width: 350px) {
+
+	div.flex-container div {
+
+	width:170%;
+	overflow: auto;
+	text-align: center;
+	margin:auto;
+	
+	}
+	
+.button3 {
+		padding:10px;
+	}
+	.mail {
+	font-size: 17px;
+	margin-bottom: 10px;
+	}
+	h5.designer {
+		margin-top:38px;
 	}
 }
