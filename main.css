@@ -363,6 +363,7 @@ background-image: url('images/stone 8.jpg');
 	background-color: #FFF;
 	vertical-align: sub;
 	border: solid 1px;
+	overflow:scroll;
 
 	 
 }
